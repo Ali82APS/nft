@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color_07101D: #07101d;
+  --color_FF3C00: #ff3c00;
+}
+
+body {
+  font-family: kalameh;
+  background-color: var(--color_07101D);
+}
+
+@font-face {
+  font-family: kalameh;
+  font-style: normal;
+  font-weight: 900;
+  src: url("../font/WebFonts/_Woff/KalamehWeb-Black.woff") format("woff");
+}
+@font-face {
+  font-family: kalameh;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../font/WebFonts/_Woff/KalamehWeb-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: kalameh;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/WebFonts/_Woff/KalamehWeb-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: kalameh;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../font/WebFonts/_Woff/KalamehWeb\(FaNum\)-Bold.woff")
+    format("woff");
+}
+@font-face {
+  font-family: kalameh;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/WebFonts/_Woff/KalamehWeb\(FaNum\)-Regular.woff")
+    format("woff");
+}
+
+a {
+  text-decoration: none;
+}
+
+header::before {
+  content: "";
+  width: 904px;
+  height: 876px;
+  background-image: radial-gradient(#3d0d5861 38%, #070f1c00 0);
+  filter: blur(74px);
+  -webkit-filter: blur(74px);
+  position: absolute;
+  opacity: 0.9;
+  right: -230px;
+  top: -270px;
+  z-index: -1;
+}
+
+.text_FF3C00 {
+  color: var(--color_FF3C00);
+}
+.border_FF3C00 {
+  border-color: var(--color_FF3C00) !important;
+}
+.bg_FF3C00 {
+  background-color: var(--color_FF3C00);
+}
+.w_70 {
+  width: 70%;
+}
+.title_main_header {
+  font-size: 4rem;
+}
+.bg_linear_gradient_main_site {
+  background-image: linear-gradient(to right, #7011ad, #bc0505, #fc630f);
+}
+.main_img_header::before,
+.main_img_header::after {
+  content: "";
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.main_img_header::before {
+  background-image: url("../img/Path\(broken\).png");
+  width: 36px;
+  height: 46px;
+  top: 4rem;
+  left: 24rem;
+}
+.main_img_header::after {
+  background-image: url("../img/Path\(curve\).png");
+  width: 64px;
+  height: 30px;
+  top: 25rem;
+  left: 0rem;
+}
+.count_user_site {
+  width: 300px;
+  height: 80px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  bottom: 82px;
+  right: 72px;
+}
+.search_form_header {
+  height: 68px;
+}
+.search_form_header button {
+  right: 12px;
+  top: 18px;
+}
+
+@media screen and (max-width: 600.98) {
+  .title_main_header {
+    font-size: 1.25rem;
+  }
+
+  header::before{
+    width: 730px;
+    height: 730px;
+    filter: blur(70px);
+    -webkit-filter: blur(70px);
+    opacity: 0.6;
+    right: 230px;
+    top: 270px;
+    z-index: -1;
+  }
+}
