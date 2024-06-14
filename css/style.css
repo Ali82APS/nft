@@ -81,6 +81,10 @@ header::before {
 .title_main_header {
   font-size: 4rem;
 }
+.icon_header_container {
+  width: 80px;
+  height: 80px;
+}
 .bg_linear_gradient_main_site {
   background-image: linear-gradient(to right, #7011ad, #bc0505, #fc630f);
 }
@@ -121,20 +125,73 @@ header::before {
   right: 12px;
   top: 18px;
 }
+.wallet_box_1,
+.wallet_box_6 {
+  background-image: linear-gradient(to right bottom, #07101d, #fc2803);
+}
+.wallet_box_1::after,.wallet_box_6::after{
+  border-top: 1px solid #fc2803;
+}
+.wallet_box_2 {
+  background-image: linear-gradient(to right bottom, #07101d, #ffbb0d);
+}.wallet_box_2::after{
+  border-top: 1px solid #ffbb0d;
+}
+.wallet_box_3 {
+  background-image: linear-gradient(to right bottom, #07101d, #00d1ff);
+}
+.wallet_box_3::after{
+  border-top: 1px solid #00d1ff;
+}
+.wallet_box_4 {
+  background-image: linear-gradient(to right bottom, #07101d, #fe007a);
+}
+.wallet_box_4::after{
+  border-top: 1px solid #fe007a;
+}
+.wallet_box_5 {
+  background-image: linear-gradient(to right bottom, #07101d, #760aff);
+}
+.wallet_box_5::after{
+  border-top:1px solid #760aff;
+}
+
+.wallet_box {
+  padding: 1px;
+  height: 188px;
+}
+.wallet_box > div {
+  background-color: #161e2a;
+}
+
+.wallet_box::after{
+  content: '';
+  width: 43px;
+  height: 22px;
+  background-color: #07101d;
+  position: absolute;
+  right: -15px;
+  bottom: -5px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+}
 
 @media screen and (max-width: 600.98) {
   .title_main_header {
     font-size: 1.25rem;
   }
-
-  header::before{
-    width: 730px;
-    height: 730px;
-    filter: blur(70px);
-    -webkit-filter: blur(70px);
-    opacity: 0.6;
-    right: 230px;
-    top: 270px;
-    z-index: -1;
+  header::before {
+    width: 10%;
+    height: 10%;
+    right: 20px;
+    top: 0px;
+    z-index: -2;
   }
 }
