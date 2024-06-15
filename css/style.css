@@ -15,6 +15,12 @@ body {
 }
 
 @font-face {
+  font-family: gilroy;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../font/WebFonts/_Woff/Gilroy-Bold.woff") format("woff");
+}
+@font-face {
   font-family: kalameh;
   font-style: normal;
   font-weight: 900;
@@ -52,10 +58,14 @@ a {
   text-decoration: none;
 }
 
+.f_gilroy{
+  font-family: gilroy;
+}
+
 header::before {
   content: "";
-  width: 904px;
-  height: 876px;
+  width: 620px;
+  height: 620px;
   background-image: radial-gradient(#3d0d5861 38%, #070f1c00 0);
   filter: blur(74px);
   -webkit-filter: blur(74px);
@@ -183,15 +193,47 @@ header::before {
   -o-border-radius: 1px;
 }
 
-@media screen and (max-width: 600.98) {
+.box_hot_bids{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.img_hot_bids > div{ 
+  top: 1.5rem ;
+  left: 2rem;
+}
+.heart_icon_hot_bids{
+  width: 58px;
+  height: 58px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+}
+.text_time_hot_bids{
+  width: 172px;
+  height: 58px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font-family: gilroy;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 635.98) {
   .title_main_header {
     font-size: 1.25rem;
   }
   header::before {
-    width: 10%;
-    height: 10%;
+    content: '';
+    width: 730px;
+    height: 730px;
     right: 20px;
     top: 0px;
     z-index: -2;
   }
+  .text_time_hot_bids{
+    width: 69px;
+    height: 22px;
+    font-size: 12px;
+  }
+
 }
