@@ -74,6 +74,7 @@ header::before {
   right: -230px;
   top: -270px;
   z-index: -1;
+  overflow: hidden;
 }
 
 .text_FF3C00 {
@@ -217,7 +218,43 @@ header::before {
   font-family: gilroy;
   font-size: 24px;
 }
+.section_property{
+  margin-top: 11rem;
+}
+.box_property{
+  height: 240px;
+}
+.icon_box_property{
+  right: 2rem;
+  top: -2.5rem;
+  width: 72px;
+  height: 72px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  margin-bottom: 1rem;
+}
+.box_property_1{
+  border: 1px solid #00f1aa;
+  background: linear-gradient(107deg, rgba(0, 255, 26, 0.1),rgba(255, 255, 255, 0.1));
+}
+.box_property_2{
+  border: 1px solid #5300ff;
+  background: linear-gradient(107deg, rgba(83, 0, 255, 0.1),rgba(255, 255, 255, 0.1));
+}
+.box_property_3{
+  border: 1px solid #ff1f00;
+  background: linear-gradient(107deg, rgba(255, 0, 31, 0.1),rgba(255, 255, 255, 0.1));
+}
 
+
+@media screen and (max-width: 900.98) {
+  .title_main_header{
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}
 @media screen and (max-width: 635.98) {
   .title_main_header {
     font-size: 1.25rem;
