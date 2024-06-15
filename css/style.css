@@ -23,7 +23,7 @@ body {
 @font-face {
   font-family: kalameh;
   font-style: normal;
-  font-weight: 900;
+  font-weight: 800;
   src: url("../font/WebFonts/_Woff/KalamehWeb-Black.woff") format("woff");
 }
 @font-face {
@@ -62,7 +62,7 @@ a {
   font-family: gilroy;
 }
 
-header::before {
+.ellipse_1 {
   content: "";
   width: 620px;
   height: 620px;
@@ -86,8 +86,17 @@ header::before {
 .bg_FF3C00 {
   background-color: var(--color_FF3C00);
 }
+.mt_10{
+  margin-top: 10rem;
+}
+.mb_7{
+  margin-bottom: 7rem;
+}
 .w_70 {
   width: 70%;
+}
+.w_90{
+  width: 90%;
 }
 .title_main_header {
   font-size: 4rem;
@@ -248,25 +257,53 @@ header::before {
   background: linear-gradient(107deg, rgba(255, 0, 31, 0.1),rgba(255, 255, 255, 0.1));
 }
 
+.img_box_trends{
+  -webkit-transform: translateY(95px);
+  -moz-transform: translateY(95px);
+  -ms-transform: translateY(95px);
+  -o-transform: translateY(95px);
+  transform: translateY(95px);
+}
+.caption_box_trends{
+  padding-top: 7rem;
+  height: 220px;
+  background-color: rgba(255, 255, 255, 0.1);
+  /* backdrop-filter: blur(90px);
+  -webkit-backdrop-filter: blur(90px); */
+}
+.ellipse_3{
+  z-index: -1;
+  width: 1605px;
+  height: 1613px; 
+  top: -10rem;
+  right: -45rem; 
+  background: radial-gradient(62.37% 62.37% at 50% 50%, rgba(189, 9, 95, 0.1) 37.62%, rgba(7, 15, 28, 0) 100%); 
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px); 
+}
+.badge_off{
+  top: 3rem;
+}
+.box_top_creator{
+  height: 182px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
 
 @media screen and (max-width: 900.98) {
   .title_main_header{
     font-size: 0.8rem;
     font-weight: 600;
   }
+  
 }
 @media screen and (max-width: 635.98) {
   .title_main_header {
-    font-size: 1.25rem;
+    font-size: 2.5rem;
   }
-  header::before {
-    content: '';
-    width: 730px;
-    height: 730px;
-    right: 20px;
-    top: 0px;
-    z-index: -2;
-  }
+
   .text_time_hot_bids{
     width: 69px;
     height: 22px;
