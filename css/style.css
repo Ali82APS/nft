@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid silver; */
 }
 
 :root {
@@ -23,7 +24,13 @@ body {
 @font-face {
   font-family: kalameh;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 300;
+  src: url("../font/WebFonts/_Woff/KalamehWeb-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: kalameh;
+  font-style: normal;
+  font-weight: 700;
   src: url("../font/WebFonts/_Woff/KalamehWeb-Black.woff") format("woff");
 }
 @font-face {
@@ -139,7 +146,7 @@ ul{
   height: 80px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
   position: absolute;
   bottom: 82px;
   right: 72px;
@@ -304,8 +311,8 @@ footer{
   z-index: 2;
   width: 615px;
   height: 584px; 
-  top: -11%;
-  right: -12%; 
+  top: -1065%;
+  right: -2%; 
   background: radial-gradient(62.37% 62.37% at 50% 50%, rgba(8, 52, 164, 0.20) 21.7%, rgba(7, 15, 28, 0.00) 100%); 
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px); 
@@ -322,11 +329,17 @@ footer{
   .title_main_header {
     font-size: 0.5rem;
   }
-
   .text_time_hot_bids{
     width: 69px;
     height: 22px;
     font-size: 12px;
+  }
+  .icon_header_container{
+    width: 40px;
+    height: 40px;
+  }
+  .icon_header_container img{
+    width: 24px;
   }
 
 }
